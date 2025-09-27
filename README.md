@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+## Smart Airpods
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Real-Time Noise Cancellation, Frequency Isolation, and Translation for Smart AirPods**
 
-## Available Scripts
+## Project Overview
+SmartAirPods is an innovative audio solution combining three advanced functionalities:
 
-In the project directory, you can run:
+1. **Active Noise Cancellation (ANC)** – Completely blocks external sounds.  
+2. **Real-Time Frequency Isolation** – Amplify, reduce, or mute specific voices or sounds in your surroundings.  
+3. **Real-Time Translation** – Translates foreign languages into your language with the same speaker accent.
 
-### `npm start`
+This project is ideal for classrooms, group meetings, and noisy environments.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
+-  **ANC:** Blocks all unwanted noise efficiently  
+-  **Frequency Isolation:** Control individual sound sources with sliders  
+-  **Translation:** Real-time translation with speaker’s accent preserved  
+-  **Mobile App:** React Native frontend with interactive UI  
+-  **Low Latency Processing:** Near real-time performance for smooth experience  
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Architecture
+Microphone -> App (Processing Module)
+        |                                  |
+        |----> Noise Cancellation           |
+        |----> Frequency Isolation         |
+        |----> Real-Time Translation       |
+        v
+      Output to SmartAirPods
+## Installation Requirements
 
-### `npm run build`
+- Python
+- Node.js
+- Visual Studio Code
+## Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Clone the repository:
+git clone https://github.com/MeerabxAzhar/SmartAirPods.git
+cd SmartAirPods
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Install backend dependencies:
+pip install -r requirements.txt
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Run the app:
+python backend/main.py
 
-### `npm run eject`
+- Launch the mobile frontend:
+cd frontend
+npm install
+npx react-native run-android
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT License © 2025 Meerab Azhar
