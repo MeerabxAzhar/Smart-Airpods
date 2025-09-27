@@ -1,0 +1,127 @@
+.translation-container {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    background: white;
+  }
+  
+  .translation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #d3d3d3;
+  }
+  
+  .translation-logo {
+    width: 80px;
+    height: auto;
+  }
+  
+  .translation-bluetooth-icon {
+    font-size: 24px;
+  }
+  
+  .translation-settings {
+    padding: 20px;
+  }
+  
+  .translation-settings h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .dropdown {
+    position: relative;
+    margin-top: 10px;
+  }
+  
+  .dropdown-btn {
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border: 1px solid black;
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dropdown-arrow {
+    font-size: 14px;
+  }
+  
+  .dropdown-menu {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+    border: 1px solid black;
+    background: white;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu li:hover,
+  .dropdown-menu li.active {
+    background: black;
+    color: white;
+  }
+  
+  /* Styles for the Translation buttons */
+  .translation-button-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .translation-button {
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .translation-button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  .translation-button:active {
+    transform: scale(0.98);
+  }
+  
+  /* Stop button styling */
+  .translation-button.stop-button {
+    background-color: #f44336;
+  }
+  
+  .translation-button.stop-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .translation-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    margin-top: 10px;
+    color: #d32f2f;
+    font-size: 14px;
+    text-align: center;
+    max-width: 100%;
+  }
+  

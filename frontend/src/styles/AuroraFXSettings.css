@@ -1,0 +1,238 @@
+/* Set the background of the entire page to black */
+
+
+body {
+  background: black;
+  /* Black base background */
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  overflow: hidden;
+  /* Prevent scrollbars from showing */
+}
+
+
+/* Container for the whole page */
+.aurorafx-container {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  /* min-height: 100vh; */
+  /* Ensure container takes full height of the viewport */
+  text-align: center;
+  /* padding-top: 50px; */
+  /* Add some top padding */
+}
+
+.aurorafx-logo {
+  max-width: 150px;
+}
+
+.aurorafx-bluetooth-icon {
+  font-size: 3rem;
+  color: white;
+}
+
+/* Styling for the dynamic heading */
+.dynamic-heading {
+  color: white;
+  font-size: 3rem;
+  /* margin-top: 60px; */
+  /* Position heading below the fixed header */
+  animation: moveIn 4s ease-out, slideUp 2s ease-out;
+}
+
+/* First part of the heading */
+.welcome-text {
+  display: block;
+  font-size: 3rem;
+  font-weight: bold;
+  animation: fadeIn 3s ease-out;
+}
+
+/* Second part of the heading */
+.clarity-text {
+  display: block;
+  font-size: 2.5rem;
+  font-style: italic;
+  animation: moveText 5s linear infinite;
+  /* Make it scroll */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Slide up animation */
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Moving effect for the "From noise to clarity" text */
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+    /* Start from the right */
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateX(-50%);
+    /* Move to the center */
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-100%);
+    /* Move out to the left */
+    opacity: 0;
+  }
+}
+
+/* Error message styling */
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.aurorafx-settings {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  /* Adjust as needed */
+  /* margin-top: 20px; */
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+/* Container for the entire page */
+.aurorafx-container {
+  background-color: #000;
+  /* Black background */
+  color: #fff;
+  /* White text */
+  font-family: 'Arial', sans-serif;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Header with Logo and Bluetooth Icon */
+.aurorafx-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  /* margin-bottom: 40px; */
+}
+
+.aurorafx-logo {
+  height: 150px;
+}
+
+.aurorafx-bluetooth-icon {
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Settings Section */
+.aurorafx-settings {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aurorafx-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1a1a1a;
+  /* Dark gray for contrast */
+  padding: 20px 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.aurorafx-toggle:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+}
+
+.aurorafx-toggle span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Toggle Button Styles */
+.toggle-button {
+  width: 50px;
+  height: 25px;
+  background-color: white;
+  /* Dark gray */
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button.toggle-active {
+  background-color: #fff;
+  /* White when active */
+}
+
+.toggle-circle {
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  /* Black circle */
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  transition: left 0.3s ease, background-color 0.3s ease;
+}
+
+.toggle-button.toggle-active .toggle-circle {
+  left: 25px;
+  background-color: #000;
+  /* Black circle */
+}
+
+/* Footer (Optional) */
+.aurorafx-footer {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.8rem;
+  color: #bbb;
+  text-align: center;
+  width: 100%;
+}

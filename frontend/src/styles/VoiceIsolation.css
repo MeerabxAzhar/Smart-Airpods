@@ -1,0 +1,92 @@
+.voice-isolation-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+  }
+  
+  .voice-isolation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .voice-isolation-logo {
+    height: 40px;
+  }
+  
+  .voice-isolation-bluetooth-icon {
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  .anc-toggle-section {
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .anc-toggle-button {
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .anc-toggle-button.enabled {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .anc-toggle-button.disabled {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .error-message {
+    color: #dc3545;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .voice-isolation-settings {
+    margin-top: 30px;
+  }
+  
+  .voice-isolation-settings h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .voice-isolation-slider {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .voice-isolation-slider input[type="range"] {
+    flex: 1;
+    height: 8px;
+    -webkit-appearance: none;
+    background: #ddd;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .voice-isolation-slider input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .voice-isolation-slider span {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  

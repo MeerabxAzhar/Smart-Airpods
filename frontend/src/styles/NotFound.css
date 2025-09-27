@@ -1,0 +1,14 @@
+/* App.css */
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    background-color: aliceblue;
+  }
+  
+  .not-found-text {
+    font-size: 3rem;
+    color: #333;
+  }
